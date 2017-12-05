@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Crossword Sound Mod
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Replace the crummy new nound with a more triumphant one
 // @author       Alex Potts
 // @match        *://embed.universaluclick.com/c/usat/l/*
@@ -10,6 +10,11 @@
 
 (function() {
     'use strict';
-     setTimeout(function(){window.puzzle_solve.setAttribute('src', 'http://apotts.me/mp3/tada.mp3');}, 5000);
-    // Your code here...
+
+     setTimeout(
+        function(){
+            window.puzzle_solve.setAttribute('src', 'http://apotts.me/mp3/tada.mp3');
+        }
+    , 5000);
+     
 })();
