@@ -11,10 +11,8 @@
 (function() {
     'use strict';
 
-     setTimeout(
-        function(){
-            window.puzzle_solve.setAttribute('src', 'http://apotts.me/mp3/tada.mp3');
-        }
-    , 5000);
-     
+    setTimeout(function(){
+        window.puzzle_solve.setAttribute('src', 'http://apotts.me/mp3/tada.mp3');
+    }, 5000);
+
 })();
